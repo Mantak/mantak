@@ -8,7 +8,8 @@ import reducerB from './reducers/reducer_b';
 const logger = createLogger();
 
 const reducers = combineReducers({
-  reducerA, reducerB
+  reducerA,
+  reducerB
 });
 const preloadedState = {};
 const middlewares = [ReduxThunk, logger];

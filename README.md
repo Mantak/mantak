@@ -1,5 +1,5 @@
 # mantak
-meteor + react + redux + material-ui
+meteor+react+redux+material-ui
 
 # create meteor app
 meteor create mantak
@@ -8,17 +8,17 @@ meteor create mantak
 meteor remove autopublish insecure
 
 # add meteor packages
-meteor add react-meteor-data
+meteor add less react-meteor-data
 
 # add npm packages
 npm install --save
 react
 react-dom
 react-router
-react-tap-event-plugin@^2.0.0
 redux
 react-redux
 redux-logger
 redux-thunk
 react-addons-pure-render-mixin
+react-tap-event-plugin@^2.0.0
 material-ui
