@@ -22,3 +22,4 @@ redux-thunk
 react-addons-pure-render-mixin
 react-tap-event-plugin@^2.0.0
 material-ui
+recharts
