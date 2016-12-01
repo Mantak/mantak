@@ -19,7 +19,7 @@ redux
 react-redux
 redux-logger
 redux-thunk
-react-addons-pure-render-mixin
-react-tap-event-plugin@^2.0.0
+react-addons-pure-render-mixin   ~~react-meteor-data需要~~
+react-tap-event-plugin@^2.0.0    ~~material-ui需要~~
 material-ui
 recharts
