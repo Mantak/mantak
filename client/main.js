@@ -1,22 +1,25 @@
-import { Template } from 'meteor/templating';
-import { ReactiveVar } from 'meteor/reactive-var';
+import React  from 'react';
+import ReactDOM  from 'react-dom';
+import injectTapEventPlugin from 'react-tap-event-plugin';
 
-import './main.html';
+import { Provider }  from 'react-redux';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { Router, browserHistory } from 'react-router';
 
-Template.hello.onCreated(function helloOnCreated() {
-  // counter starts at 0
-  this.counter = new ReactiveVar(0);
-});
+import AppStore from '/imports/startup/client/store';
+import AppTheme from '/imports/startup/client/theme';
+import AppRoutes from '/imports/startup/client/routes';
 
-Template.hello.helpers({
-  counter() {
-    return Template.instance().counter.get();
-  },
-});
+injectTapEventPlugin();
 
-Template.hello.events({
-  'click button'(event, instance) {
-    // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
-  },
+
+Meteor.startup(()=> {
+  ReactDOM.render(
+    <Provider store={AppStore}>
+      <MuiThemeProvider muiTheme={AppTheme}>
+        <Router history={browserHistory} routes={AppRoutes}/>
+      </MuiThemeProvider>
+    </Provider>,
+    document.getElementById('main')
+  );
 });

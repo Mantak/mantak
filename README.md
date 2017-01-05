@@ -36,7 +36,8 @@
     srp                          added, version 1.0.10
     tmeasday:check-npm-versions  added, version 0.2.0
 
-
+### meteor npm install --save bcrypt
+### npm i
 ### npm add
 - npm install --save
 > 基本功能
@@ -44,7 +45,6 @@
 - react
 - react-dom
 - react-router
-- react-router-redux
 - redux
 - react-redux
 - redux-logger
