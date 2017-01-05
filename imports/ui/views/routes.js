@@ -14,10 +14,10 @@ const _routes = [
   },
   { path: '/',
     component: Layout,
-    indexRoute:  {component: Home},
+    indexRoute: {component: Home},
     childRoutes: [
-      { path: 'about', component: About },
-      { path: '*', component: NotFound }
+      {path: 'about', component: About},
+      {path: '*', component: NotFound}
     ],
   },
 ];

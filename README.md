@@ -62,5 +62,4 @@
 > 其他
 - react-grid-system                ~~适应屏幕~~ https://github.com/zoover/react-grid-system
 - react-slick                      ~~轮播~~     https://github.com/akiran/react-slick
-- nuka-carousel                    ~~轮播~~
 - recharts
