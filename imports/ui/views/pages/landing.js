@@ -1,11 +1,13 @@
 import React from 'react';
-class _Page extends React.Component {
-  render() {
-    return (
-      <div>
-        来自Landing
-      </div>
-    );
-  }
+
+
+
+function _Page() {
+  return (
+    <div id="landing" className="up">
+      landing
+    </div>
+  );
 }
+
 export default _Page;
